@@ -8,7 +8,7 @@ Here are the main changes I made to speed up the code:
 
 - **Removed the storing of non-interesting outcomes:** if we just want to know how many 1's are rolled, why do we keep the amount of 2,3 and 4's
 - **Added a break for when we know the rolls can't be better:** This has it's downsides, but at least throuhg testing it seems to perform better. The idea is to check if the next few rolls would be useless, eg: the `maxOnes` is 100 and we have 50 `rolls` missing, but currently we only have 49 hits, it would be a waste of time to continue searching.
-- **Changing from Python to a other languages:** Very likely the final bottle neck would be python's interpreter, while I think its possible to make faster code in python than my fastest code, I'm not going to be the one to do it, so I just used other languages I knew could be faster.
+- **Changing from Python to other languages:** Very likely the final bottle neck would be python's interpreter, while I think its possible to make faster code in python than my fastest code, I'm not going to be the one to do it, so I just used other languages I knew could be faster.
 
 ## Other Changes
 
